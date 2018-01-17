@@ -21,7 +21,8 @@
 <body>
   
   <div id="mapid"></div>
-<script>
+  <script src="geometry/harare_wards_geojson.js" type="text/javascript"></script>
+  <script>
 
 	var mymap = L.map('mapid').setView([-17.826,31.051], 11);
 
@@ -32,8 +33,15 @@
 			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 		id: 'mapbox.streets'
 	}).addTo(mymap);
-
-</script>
+	  
+	var myStyle = {
+    	  "color": "#ff7800",
+  	};
+  L.geoJSON(wards, {
+    style: myStyle
+  }).addTo(mapid);
+	  
+  </script>
   
 </body>
 </html>
