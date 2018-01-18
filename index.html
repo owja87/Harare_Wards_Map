@@ -35,9 +35,9 @@
 	}).addTo(map);
 	
 	function onEachFeature(feature, layer) {
-		if (feature.properties && feature.properties.name) {
-		layer.bindPopup(feature.properties.name);
-		}
+    		if (feature.properties && feature.properties.popupContent) {
+        		layer.bindPopup(feature.properties.popupContent);
+    		}
 	}
 	
 	var myStyle = {
