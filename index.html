@@ -35,8 +35,10 @@
 	map.on('blur', function() { map.scrollWheelZoom.disable(); });
 /* END OF enable scroll when map is active for Desktop*/
 
-	map.addEventListener("touchstart", onTwoFingerDrag);
-	map.addEventListener("touchend", onTwoFingerDrag);
+	const mapEl = document.querySelector("#map");
+	  
+	mapEl.addEventListener("touchstart", onTwoFingerDrag);
+	mapEl.addEventListener("touchend", onTwoFingerDrag);
 
 	function onTwoFingerDrag (e) {
   		if (e.type === 'touchstart' && e.touches.length === 1) {
