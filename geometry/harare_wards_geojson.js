@@ -1,4 +1,4 @@
-var = wards {
+var wards = {
   "type": "FeatureCollection",
   "features": [
 {
