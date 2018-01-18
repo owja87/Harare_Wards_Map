@@ -40,6 +40,9 @@
   	};
   
 	L.geoJSON(wards, {
+		onEachFeature: function (feature, layer) {
+        		layer.bindPopup(feature.properties.name);
+    		}
     		style: myStyle
 	}).addTo(map);
 	  
