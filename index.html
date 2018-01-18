@@ -39,8 +39,9 @@
 		dragging: pc,
   		tap: pc
 	});
-	  
-	map.attributionControl.setPrefix('your new powered by prefix');
+	
+	// Make leaflet attribution open in new window	  
+	map.attributionControl.setPrefix('<a href="http://leafletjs.com/" target="_blank">Leaflet</a>');
 
 	// Enable mouse scroll when map is active for Desktop */	  
 	map.on('focus', function() { map.scrollWheelZoom.enable(); });
