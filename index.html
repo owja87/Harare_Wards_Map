@@ -34,12 +34,6 @@
 		id: 'mapbox.streets'
 	}).addTo(map);
 	
-	function onEachFeature(feature, layer) {
-    		if (feature.properties && feature.properties.popupContent) {
-        		layer.bindPopup(feature.properties.popupContent);
-    		}
-	}
-	
 	var myStyle = {
     	  "color": "#ff7800",
 	  "opacity": 0.65
