@@ -33,7 +33,13 @@
 			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 		id: 'mapbox.streets'
 	}).addTo(map);
-	  
+	
+	function onEachFeature(feature, layer) {
+       		if (feature.properties && feature.properties.Name) {
+        		layer.bindPopup(feature.properties.Name);
+    		}
+	}
+	
 	var myStyle = {
     	  "color": "#ff7800",
 	  "opacity": 0.65
@@ -41,6 +47,7 @@
   
 	L.geoJSON(wards, {
     		style: myStyle
+		onEachFeature: onEachFeature
 	}).addTo(map);
 	  
   </script>
