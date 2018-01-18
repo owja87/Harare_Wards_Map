@@ -10,7 +10,7 @@ body {
   height: 90vh;
   position: relative;
   z-index:10;
-  &.swiping::after {
+   &.swiping::after {
     content: 'Use two fingers to move the map';
     color: #fff;
     font-family: 'Lato', sans-serif;
