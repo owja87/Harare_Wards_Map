@@ -9,6 +9,8 @@ body {
 #map {
   height: 100%;
   width: 100%;
+  position: relative;
+  z-index:10;
   &.swiping::after {
     content: 'Use two fingers to move the map';
     color: #fff;
