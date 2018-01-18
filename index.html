@@ -38,8 +38,8 @@
 		var popupContent = "<p>I started out as a GeoJSON " +
 				feature.geometry.type + ", but now I'm a Leaflet vector!</p>";
 
-		if (feature.properties && feature.properties.Name) {
-			popupContent += feature.properties.Name;
+		if (feature.properties && feature.properties.name) {
+			popupContent += feature.properties.name;
 		}
 
 		layer.bindPopup(popupContent);
