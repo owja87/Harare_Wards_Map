@@ -55,9 +55,7 @@
   
 	//Add GEOJson layer
 	var geojson = L.geoJSON(wards, {
-		onEachFeature: function (feature, layer) {
-        		layer.bindPopup(feature.properties.Link);
-    		},
+		onEachFeature: onEachFeature,
 		style: myStyle
 	}).addTo(mymap);
 	
