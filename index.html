@@ -103,7 +103,8 @@
 		
 	function onEachFeature(feature, layer) {
         layer.on({
-        click: highlightFeature
+        click: highlightFeature,
+	click: resetHighlight
         });
         }
 </script>
