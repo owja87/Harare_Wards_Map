@@ -54,9 +54,9 @@
   	};
   
 	//Add GEOJson layer
-	L.geoJSON(wards, {
+	var geojson = L.geoJSON(wards, {
 		onEachFeature: function (feature, layer) {
-        		layer.bindPopup(feature.properties.Name);
+        		layer.bindPopup(feature.properties.Link);
     		},
 		style: myStyle
 	}).addTo(mymap);
@@ -80,6 +80,12 @@
 	function resetHighlight(e) {
         geojson.resetStyle(e.target);
         }
+		
+	function onEachFeature(feature, layer) {
+        layer.on({
+        click: highlightFeature
+    });
+}
 		
 </script>
   
