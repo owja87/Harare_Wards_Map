@@ -68,7 +68,6 @@
         color: '#666',
         dashArray: '',
         fillOpacity: 0.7
-	info.update(layer.feature.properties);
         });
 
         if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
@@ -79,7 +78,6 @@
 	//Reset highlight on ... ???	
 	function resetHighlight(e) {
         geojson.resetStyle(e.target);
-	info.update();
         }
 		
 	function onEachFeature(feature, layer) {
