@@ -10,7 +10,8 @@ body {
     position: relative;
     width: 500px;
 }
-#mapid {
+
+#map {
     height: 100%;       
     width: 100%;
 }
