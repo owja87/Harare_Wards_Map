@@ -79,7 +79,11 @@
 	}).addTo(mymap);
 	
 	//Begin code to highlight feature on click	
+	var lastClickedLayer; 
 	function highlightFeature(e) {
+	if (lastClickedLayer) {
+        geojson.resetStyle(lastClickedLayer);
+	}
         var layer = e.target;
 
         layer.setStyle({
@@ -93,6 +97,7 @@
             layer.bringToFront();
         }
 	info.update(layer.feature.properties);
+	lastClickedLayer = layer;
         }
 
 	//Reset highlight on ... ???	
@@ -103,8 +108,7 @@
 		
 	function onEachFeature(feature, layer) {
         layer.on({
-        click: highlightFeature,
-	click: resetHighlight
+        click: highlightFeature
         });
         }
 </script>
