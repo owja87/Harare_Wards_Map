@@ -43,7 +43,9 @@ body {
 }
 
 .info {
-    margin-top: 2em; 
+    position:absolute; 
+    top:100px; 
+    right:40px;  
     padding: 6px 8px;
     font: 14px/16px Arial, Helvetica, sans-serif;
     background: white;
