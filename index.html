@@ -62,6 +62,7 @@
 	//Begin code to highlight feature on click	
 	function highlightFeature(e) {
         var layer = e.target;
+	info.update(layer.feature.properties);
 
         layer.setStyle({
         weight: 5,
@@ -99,7 +100,7 @@
 	info.update = function (props) {
     	this._div.innerHTML = '<h4>Ward Information</h4>' +  (props ?
         '<b>' + props.Name + '</b><br />' + props.Link + ' people / mi<sup>2</sup>'
-        : 'Hover over a state');
+        : 'Click on a Ward');
 	};
 
 	info.addTo(map);
