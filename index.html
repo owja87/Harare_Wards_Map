@@ -86,26 +86,7 @@
         layer.on({
         click: highlightFeature
         });
-        }
-	
-	// Add info div to display ward information 
-	var info = L.control();
-  	
-        info.onAdd = function (map) {
-    	this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-    	this.update();
-    	return this._div;
-	};
-
-	// method to update the control based on feature properties passed
-	info.update = function (props) {
-    	this._div.innerHTML = '<h4>Ward Information</h4>' +  (props ?
-        '<b>' + props.Name + '</b><br />' + props.Link + ' people / mi<sup>2</sup>'
-        : 'Hover over a state');
-	};
-
-	info.addTo(map);
-		
+        }	
 </script>
   
 </body>
