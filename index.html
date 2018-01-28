@@ -60,7 +60,7 @@
 	// method to update the control based on feature properties passed
 	info.update = function (props) {
     	this._div.innerHTML = '<h4>Ward Information</h4>' +  (props ?
-        '<b>' + props.Name + '</b><br><br>Suburbs in this ward include: <i>' + props.Name + '</i><br><br>Your Councillor is: <i>' + props.Name + '</i><br><br>' + props.Link
+        '<b>' + props.Name + '</b><br><br>Suburbs in this ward include: <i>' + props.Suburbs + '</i><br><br>Your Councillor is: <i>' + props.Councillor + '</i><br><br>' + props.Link
         : 'Click on a Ward');
 	};
 
