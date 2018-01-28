@@ -61,6 +61,7 @@
 		style: myStyle
 	}).addTo(mymap);
 	
+	//Begin code to highlight feature on click	
 	function highlightFeature(e) {
         var layer = e.target;
 
@@ -75,6 +76,11 @@
             layer.bringToFront();
         }
         }
+	
+	function resetHighlight(e) {
+        geojson.resetStyle(e.target);
+        }
+		
 </script>
   
 </body>
