@@ -99,12 +99,6 @@
 	info.update(layer.feature.properties);
 	lastClickedLayer = layer;
         }
-
-	//Reset highlight on ... ???	
-	function resetHighlight(e) {
-        geojson.resetStyle(e.target);
-	info.update();
-        }
 		
 	function onEachFeature(feature, layer) {
         layer.on({
