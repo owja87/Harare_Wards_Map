@@ -42,12 +42,11 @@ body {
   cursor: pointer;
 }
 
+.leaflet-top .leaflet-control {
+    margin-top: 100px;
+}
+
 .info {
-    position: fixed;
-    top: 200px; 
-    right: 50px;     
-    margin-top: 200px; 
-    z-index: 9999;
     padding: 6px 8px;
     font: 14px/16px Arial, Helvetica, sans-serif;
     background: white;
