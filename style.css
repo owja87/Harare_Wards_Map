@@ -43,6 +43,9 @@ body {
 }
 
 .info {
+    position: fixed;
+    top: 200px; 
+    right: 50px;     
     margin-top: 200px; 
     z-index: 9999;
     padding: 6px 8px;
