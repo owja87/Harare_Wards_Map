@@ -38,15 +38,15 @@
 	var map = L.map('map', {
 		center: [-17.826,31.051],
 		zoom: 11, 
-		scrollWheelZoom: false,
-		dragging: pc,
-  		tap: pc
+	//	scrollWheelZoom: false,
+	//	dragging: pc,
+  	//	tap: pc
 	});
 	
 	// Make leaflet attribution open in new window	  
 	map.attributionControl.setPrefix('<a href="http://leafletjs.com/" target="_blank">Leaflet</a>');
 	// Change position of zoom control
-	map.zoomControl.setPosition('topright');
+	map.zoomcontrol.setposition('topright');
 
 	// Enable mouse scroll when map is active for Desktop */	  
 	/* map.on('focus', function() { map.scrollWheelZoom.enable(); });
