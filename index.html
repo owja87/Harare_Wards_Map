@@ -30,13 +30,14 @@
 	//Initialize map
 	var mymap = L.map('mapid', {
 		center: [-17.826,31.051],
-		zoom: 11
+		zoom: 11,
+		minZoom: 9
 	});
-	
+			
 	// Make leaflet attribution open in new window	  
 	mymap.attributionControl.setPrefix('<a href="http://leafletjs.com/" target="_blank">Leaflet</a>');
 	// Change position of zoom control
-	mymap.zoomControl.setPosition('bottomleft');
+	mymap.zoomControl.setPosition('topleft');
 	
 	//Add base map and attribution
 	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
