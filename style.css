@@ -30,7 +30,7 @@ body {
 }
 
 .leaflet-control-zoom {
-    top: 100px;
+    top: 50px;
 } 
 
 @media only screen and (max-width: 500px) {
